@@ -75,3 +75,26 @@ li{
     color: #1d4ed8;
     font-style: italic;
 }
+
+iframe{
+    width: 500px;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        padding: 70px 20px;
+    }
+
+    .cols{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+    }
+
+   iframe{
+         width: 100%;
+            height: 300px;
+   }
+    
+}

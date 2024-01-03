@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/products.css" />
   </head>
   <body>
-    <script src="./js/products.js"></script>
     <header style="margin-bottom: 80px">
       <nav style="padding-top: 20px">
         <ul class="first_row">
@@ -152,8 +151,70 @@
     </header>
     <div class="main_container">
       <h1>Browse all products</h1>
-      <div id="products_grid">
-        
+      <div class="wrapper">
+        <aside>
+          <h2>Filters</h2>
+          <form id="form_el">
+            <div>
+              <input id="ascPrice" name="sort" type="radio" value="ascPrice"/>
+              <label for="ascPrice">Sort by cheapest</label>
+            </div>
+            <div>
+              <input id="descPrice" name="sort" type="radio" value="descPrice"/>
+              <label for="descPrice">Sort by most expensive</label>
+            </div>
+            <div>
+              <input type="radio" id="stock" name="sort" value="stock"/>
+              <label for="stock">Sort by stock</label>
+            </div>
+            <div>
+              <input type="radio" id="newProduct" name="sort" value="newProduct"/>
+              <label for="newProduct">Sort by new</label>
+            </div>
+            <div>
+              <input type="checkbox" id="fitted" name="fitted" value="Fitted" />
+              <label for="fitted">Fitted</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="loose"
+                name="loose"
+                value="Loose fit"
+              />
+              <label for="loose">Loose fit</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="muscle"
+                name="muscle"
+                value="Muscle fit"
+              />
+              <label for="muscle">Muscle fit</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="oversized"
+                name="oversized"
+                value="Oversized"
+              />
+              <label for="oversized">Oversized</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="regular"
+                name="regular"
+                value="Regular fit"
+              />
+              <label for="regular">Regular fit</label>
+            </div>
+            <button class="btn1" type="submit">Filter</button>
+          </form>
+        </aside>
+        <div id="products_grid"></div>
       </div>
     </div>
     <footer>
@@ -231,5 +292,6 @@
         <h2>M&M</h2>
       </div>
     </footer>
+    <script src="./js/products.js"></script>
   </body>
 </html>

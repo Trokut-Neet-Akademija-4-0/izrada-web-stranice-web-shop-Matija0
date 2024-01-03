@@ -1,0 +1,115 @@
+.contact {
+    margin: 100px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .formEl {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    border: 1px solid #cbd5e1;
+    padding: 40px 30px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  
+  .form_title {
+    font-size: 50px;
+    font-weight: 400;
+    color: #131414;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .formEl > input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    background-color: #f4f4f5;
+    padding: 0 10px;
+    font-size: 20px;
+    outline: none;
+    color: #1e293b;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .formEl > textarea {
+    width: 80%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    background-color: #f4f4f5;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    color: #1e293b;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  ::placeholder {
+    color: #64748b;
+    opacity: 1;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .btnR {
+    background-color: transparent;
+    color: #b91c1c;
+    border: #b91c1c 1px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn1{
+    background-color: #1e40af;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .btn1:hover{
+    opacity: 0.9;
+    transition: ease-in-out 0.3s;
+  }
+
+@media screen and (max-width: 1440px){
+    .contact{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .contact{
+      width: 100%;
+      margin-top: 300px;
+    }
+    .formEl{
+      width: 100%;
+    }
+    .formEl > input{
+      width: 100%;
+    }
+    .formEl > textarea{
+      width: 100%;
+    }
+    .form_title{
+      font-size: 30px;
+    }
+  }

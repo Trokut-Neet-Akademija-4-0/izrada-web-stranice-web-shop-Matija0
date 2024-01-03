@@ -96,3 +96,60 @@ svg:hover{
 .nav_link:hover{
     text-decoration: underline;
 }
+
+.second_row_mobile{
+    display: none;
+
+}
+
+.banner{
+    background: linear-gradient(rgba(44, 44, 44, 0.5), rgb(34, 34, 34)), url("../images/3088-3x2-top-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner_text{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    padding-left: 5%;
+    
+  }
+
+@media screen and (max-width: 768px){
+
+    ul{
+        padding: 5px 20px;
+    
+    }
+
+
+    .left_el{
+        display: none;
+    }
+
+
+    .search{
+        width: 100%;
+    }
+    .second_row{
+        flex-direction: column;
+    }
+
+    .banner{
+        margin-top: 280px;
+    }
+    .banner_text{
+        font-size: 2rem;
+    }
+}
+
