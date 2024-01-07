@@ -1,0 +1,244 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 100px;
+    align-items: start;
+    justify-content: space-around;
+    width: 90%;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.cart_el{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.car_el > img{
+    width: 20%;
+    height: auto;
+}
+.cart_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart_info > h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+   
+}
+.price_color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price_color > span{
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+#incBtn, #decBtn{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+input{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    outline: none;
+
+}
+
+.trash_el{
+    width: 20%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: end;
+}
+
+.cart_table{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart_info{
+    width: 50%;
+}
+
+.first_el{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #000;    
+    padding-bottom: 20px;
+}
+
+.span1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+#subtotal, #delivery{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.second_el{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second_el > span{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+.bank_cards{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bank_cards > img{
+    width: 10%;
+    height: auto;
+}
+
+button{
+    background-color: #1e40af;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: ease-in-out 0.3s;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #64748b;
+    line-height: 2;
+}
+
+.delivery_opt_link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.delivery_opt_link > span{
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.bi-chevron-right{
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        margin: 50px auto;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart_el{
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .cart_el > img{
+        width: 30%;
+        height: auto;
+    }
+
+    .cart_info{
+        width: 70%;
+        align-items: start;
+    }
+
+    .cart_table{
+        width: 100%;
+    }
+
+    .bank_cards > img{
+        width: 20%;
+        height: auto;
+    }
+
+    #incBtn, #decBtn{
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    input{
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}

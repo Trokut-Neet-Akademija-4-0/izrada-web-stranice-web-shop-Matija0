@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/footer.css" as="style" />
+    <link rel="stylesheet" href="./css/header.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/cart.css" as="style" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <iframe
+        src="./partials/header.html"
+        width="100%"
+        class="auto-height-iframe"
+      ></iframe>
+    </header>
+    <div class="container">
+      <h1>Shopping bag</h1>
+      <div class="wrapper">
+        <div class="cart_el">
+          <img
+            src="https://lp2.hm.com/hmgoepprod?set=source[/4f/00/4f009a937e443084438be08cba6e59ad5b12b76b.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[q],hmver[2]&call=url[file:/product/miniature]"
+            alt="Cart item"
+          />
+          <div class="cart_info">
+            <h2>Regular Fit Long puffer jacket</h2>
+            <small class="price">$64,99</small>
+            <div class="price_color">
+              <span>Color:</span><span>Black</span> <span>Total:</span
+              ><span>$64,99</span>
+            </div>
+            <div class="cart_quantity">
+              <div class="quantity">
+                <button id="incBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#000"
+                    class="bi bi-dash-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"
+                    />
+                  </svg>
+                </button>
+                <input type="text" value="1" />
+                <button id="decBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#000"
+                    class="bi bi-plus-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="trash_el">
+            <svg
+              style="margin-left: auto"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-trash"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+              />
+              <path
+                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="cart_table">
+          <div class="first_el">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="span1">Subtotal:</span><span id="subtotal">$64,99</span>
+            </div>
+             <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span class="span1">Delivery</span
+                ><span id="delivery">FREE</span>
+             </div>
+          </div>
+          <div class="second_el"><span>Total:</span><span>$64,99</span></div>
+          <button>Continue to checkout</button>
+          <span style="font-size: 1rem;">We accept</span>
+          <div>
+            <div class="bank_cards">
+              <img src="./images/Mastercard-logo.png" alt="Mastercard" />
+              <img src="./images/visa-logo-800x450.jpg" alt="Visa" />
+              <img src="./images/Paypal-logo.png" alt="PayPal" />
+            </div>
+          </div>
+          <p>
+            Prices and delivery costs are not confirmed until you've reached the
+            checkout. 30 days withdrawal
+          </p>
+          <div class="delivery_opt_link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+              <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+            </svg>
+            <span>Delivery and return options</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <iframe src="./partials/footer.html" class="auto-height-iframe"></iframe>
+    </footer>
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>

@@ -309,3 +309,65 @@ body {
   justify-content: center;
   gap: 40px;
 }
+
+
+/* BLOG-DETAILS CSS */
+
+.blog_container{
+  width: 80%;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.blog_container > h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0f172a;
+  padding-left: 5%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog_container > p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0f172a;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.blog_container > img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.blog_container > h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0f172a;
+  padding-left: 5%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.blog_container > p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0f172a;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.blog_span{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.8;
+  text-align: justify;
+}

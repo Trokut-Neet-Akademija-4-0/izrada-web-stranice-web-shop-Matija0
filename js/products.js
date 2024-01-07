@@ -67,7 +67,6 @@ function createProductComponent(item) {
   const link = document.createElement("a");
   link.className = "link_wrapper";
   link.href = `product-detail.html?id=${item.defaultArticle.code}`;
-  link.target = "_blank";
 
   const wrapper = document.createElement("div");
   wrapper.className = "wrapper2";

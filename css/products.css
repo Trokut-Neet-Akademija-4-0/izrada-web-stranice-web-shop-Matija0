@@ -69,7 +69,7 @@ aside {
   background-color: #f7fafc;
   padding: 20px;
   margin-top: 8%;
-  border-radius: 5px;
+  border-radius: 7px;
   position: sticky;
   top: 0;
 }
@@ -95,8 +95,8 @@ aside > h2 {
   background-color: #1e40af;
   color: #fff;
   border: none;
-  padding: 10px 12px;
-  border-radius: 5px;
+  padding: 7px 12px;
+  border-radius: 7px;
   cursor: pointer;
   width: 80%;
   font-size: 20px;
@@ -116,7 +116,7 @@ aside > h2 {
 .price_title_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 }
 
 /* PRODUCT DETAIL CSS */
@@ -133,23 +133,25 @@ aside > h2 {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
+  gap: 7px;
 }
 
 #prod_img1,
 #prod_img2,
 #prod_img3,
 #prod_img4 {
-  width: 50%;
+  width: 45%;
   height: 600px;
   object-fit: cover;
 }
+
 
 .prod_el {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 35px;
+  gap: 37px;
 }
 
 .prod_el > h1 {
@@ -177,15 +179,15 @@ aside > h2 {
   background-color: #1e40af;
   color: #fff;
   border: none;
-  padding: 10px 12px;
-  border-radius: 5px;
+  padding: 7px 12px;
+  border-radius: 7px;
   cursor: pointer;
   width: 100%;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 .prod_el > button:hover {
@@ -193,10 +195,9 @@ aside > h2 {
   transition: ease-in-out 0.3s;
 }
 
-#color_el {
+#color1, #color2, #color3, #color4 {
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: #0f172a;
 }

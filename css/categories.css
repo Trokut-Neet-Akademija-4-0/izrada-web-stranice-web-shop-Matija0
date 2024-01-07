@@ -1,0 +1,60 @@
+.container{
+    margin: 200px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.categories_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 100%;
+   
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+}
+
+.card_el{
+  width: 30%;
+  padding: 20px;
+}
+
+.card_el > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card_el > h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.card_el:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .card_el{
+        width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    .container{
+        margin: 100px auto;
+        width: 100%;
+        padding: 2%;
+    }
+}
