@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <iframe src="./partials/header.html" class="auto-height-iframe" width="100%"></iframe>
+    </header>
+    <div class="checkout_container">
+        <div class="left_el">
+            <h1>Checkout <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg></h1>
+            <h2>Ship To <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+              </svg></h2>
+            <form action="">
+                <div class="wrapper">
+                    <div class="div_wrap">
+                        <label for="first_name">First Name</label>
+                        <input required type="text" name="first_name" id="first_name" />
+                    </div>
+                    <div class="div_wrap">
+                        <label for="last_name">Last Name</label>
+                        <input required type="text" name="last_name" id="last_name" />
+                    </div>  
+                </div>
+                <div class="div_wrap">
+                    <label for="address">Street Address</label>
+                    <input required type="text" name="address" id="address" />
+                </div>
+                 <div class="wrapper"">
+                    <div class="div_wrap">
+                        <label for="code">Postal Code</label>
+                        <input required type="text" name="code" id="code" />
+                    </div>
+                    <div class="div_wrap">
+                        <label for="city">City</label>
+                        <input required type="text" name="city" id="city" />
+                    </div>
+                 </div>   
+                <div class="div_wrap">
+                    <label for="country">Country</label>
+                    <select required name="country" id="country">
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="div_wrap">
+                    <label for="phone">Phone Number</label>
+                    <input required type="number" name="phone" id="phone" />
+                </div>
+                <div class="checkbox-wrapper-3">
+                    <input type="checkbox" id="cbx-3" />
+                    <label for="cbx-3" class="toggle"><span></span></label>
+                    <small style="margin-top: 10px;">Use as billing address</small>
+                  </div>
+                  
+          </form>
+        </div>
+        <div class="right_el">
+            <div class="order_sum_wrap">
+                <h2>Order Summary</h2>
+                <div>   
+                    <div class="div_wrap2">
+                        <span class="span_el">Merchandise:</span>
+                        <span class="price">$64,99</span>
+                    </div>
+                    <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 20px;" class="div_wrap2">
+                        <span class="span_el">Shipping:</span>
+                        <span class="price">$5,99</span>
+                    </div>
+                </div>
+                <div class="div_wrap2">
+                    <span class="span_el">Order Total:</span>
+                    <span class="price">$70,98</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <iframe src="./partials/footer.html" class="auto-height-iframe" width="100%"></iframe>
+    </footer>
+</body>
+</html>
