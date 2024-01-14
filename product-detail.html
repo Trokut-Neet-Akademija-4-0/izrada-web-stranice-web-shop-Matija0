@@ -103,22 +103,24 @@
             <li>
               <input class="search" placeholder="Search products" type="text" />
             </li>
-            <li>
-              <button class="cart_btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="currentColor"
-                  class="bi bi-cart"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
-                  />
-                </svg>
-              </button>
-            </li>
+            <a href="./cart.html">
+              <li>
+                <button class="cart_btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </a>
           </div>
         </ul>
         <div class="line" />
@@ -143,24 +145,19 @@
           </li>
         </ul>
       </nav>
-      <div class="banner">
-        <span class="banner_text"
-          >Welcome to our shop we offer a variety of men's clothing</span
-        >
-      </div>
     </header>
     <div class="prod_detail_container">
       <div class="prod_gallery">
         <img id="prod_img1" alt="" />
-        <img id="prod_img2" src="" alt="" />
-        <img id="prod_img3" src="" alt="" />
-        <img id="prod_img4" src="" alt="" />
+        <img id="prod_img2" alt="" />
+        <img id="prod_img3" alt="" />
+        <img id="prod_img4" alt="" />
       </div>
       <div class="prod_el">
         <h1 id="prod_title"></h1>
         <span id="prod_price"></span>
         <p id="prod_desc"></p>
-        <div style="display: flex; align-items: center; gap: 40px;">
+        <div style="display: flex; align-items: center; gap: 40px">
           <span>Colors: </span>
           <span id="color1"></span>
           <span id="color2"></span>
