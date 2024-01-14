@@ -58,6 +58,12 @@
                     <label for="phone">Phone Number</label>
                     <input required type="number" name="phone" id="phone" />
                 </div>
+                <div class="div_wrap">
+                    <label>Card info</label>
+                    <input required type="tel" name="card" id="card" pattern="\d*" maxlength="19" placeholder="Card number"/>
+                    <input type="tel" placeholder="MM/YY" pattern="\d*" maxlength="7" id="expires">
+                    <input type="tel" placeholder="CVC" id="cvc" pattern="\d*" maxlength="4">
+                </div>
                 <div class="checkbox-wrapper-3">
                     <input type="checkbox" id="cbx-3" />
                     <label for="cbx-3" class="toggle"><span></span></label>

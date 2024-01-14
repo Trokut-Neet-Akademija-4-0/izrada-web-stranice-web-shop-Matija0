@@ -201,3 +201,17 @@ aside > h2 {
     height: 40px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 768px){
+      .grid_el{
+        width: 100%;
+      }
+
+      .wrapper{
+        flex-direction: column;
+      }
+
+      aside{
+        position: initial;
+      }
+}
