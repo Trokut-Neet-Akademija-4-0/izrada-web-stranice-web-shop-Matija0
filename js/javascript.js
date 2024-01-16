@@ -73,3 +73,47 @@ document.addEventListener("DOMContentLoaded", async function () {
   const result = await getData();
   myFunction(result);
 });
+
+let icon = {
+  success: '<span class="success_icon"></span>',
+};
+
+const showToast = (
+  message = "Sample Message",
+  toastType = "info",
+  duration = 5000
+) => {
+  if (!Object.keys(icon).includes(toastType)) toastType = "info";
+
+  let box = document.createElement("div");
+  box.classList.add("toast", `toast-${toastType}`);
+  box.innerHTML = ` <div class="toast-content-wrapper"> 
+                    <div class="toast-icon"> 
+                    ${icon[toastType]} 
+                    </div> 
+                    <div class="toast-message">${message}</div> 
+                    <div class="toast-progress"></div> 
+                    </div>`;
+  duration = duration || 5000;
+  box.querySelector(".toast-progress").style.animationDuration = `${
+    duration / 1000
+  }s`;
+
+  let toastAlready = document.body.querySelector(".toast");
+  if (toastAlready) {
+    toastAlready.remove();
+  }
+
+  document.body.appendChild(box);
+};
+
+let submit = document.getElementById("submit_btn");
+
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  showToast("Order Submitted Successfully", "success", 5000);
+
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 4000);
+});
