@@ -81,7 +81,7 @@ iframe{
     height: 400px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     footer{
         padding: 70px 20px;
     }

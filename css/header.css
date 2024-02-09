@@ -126,7 +126,7 @@ svg:hover{
     
   }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
     ul{
         padding: 5px 20px;

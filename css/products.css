@@ -204,7 +204,7 @@ aside > h2 {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){  
   .grid_el{
     width: 100%;
   }
@@ -238,8 +238,8 @@ aside > h2 {
   }
 
   #color1, #color2, #color3, #color4 {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 
   #prod_title{

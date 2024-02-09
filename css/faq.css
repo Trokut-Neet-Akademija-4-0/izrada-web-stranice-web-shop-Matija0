@@ -72,7 +72,7 @@ body {
     margin-left: 14px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .accordion {
         padding: 0 16px;
     }
